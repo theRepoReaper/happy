@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Amma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #4c094e; /* Burgundy purple background */
+            color: white;
+            padding: 20px;
+        }
+
+        .birthday-title {
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff; /* White color for text */
+            background-color: #4c094e;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: font-size 0.3s ease;
+        }
+
+        .subheadings {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .subheading {
+            width: 30%;
+        }
+
+        .subheading h2 {
+            font-size: 24px;
+            color: #ffffff; /* White color for subheadings */
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            margin-top: 10px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #042d6e; /* Footer background color */
+            color: white; /* Text color for the footer */
+            padding: 10px 0;
+        }
+
+        footer .footer-number {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="birthday-title" id="birthdayTitle">Happy Birthday Amma</h1>
+    <div class="subheadings">
+        <div class="subheading">
+            <h2>Great Food Made By You</h2>
+            <img src="image2.jpeg" alt="Good food" class="image-placeholder">
+        </div>
+        <div class="subheading">
+            <h2>A Nice Walk</h2>
+            <img src="image0.jpeg" alt="Nice walks" class="image-placeholder">
+        </div>
+        <div class="subheading">
+            <h2>My Favourite Picture Of Us</h2>
+            <img src="image1.jpeg" alt="Favourite picture" class="image-placeholder">
+        </div>
+    </div>
+    <footer>
+        <span class="footer-number">49</span>
+    </footer>
+    <script>
+        const title = document.getElementById('birthdayTitle');
+
+        title.addEventListener('mouseover', function() {
+            this.style.fontSize = '60px';
+        });
+
+        title.addEventListener('mouseout', function() {
+            this.style.fontSize = '50px';
+        });
+    </script>
+</body>
+</html>
+
